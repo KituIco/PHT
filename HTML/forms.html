@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <form action="#">
+    <h2>Form Example</h2>
+    <!-- input, textarea, select, button-->
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name"  required/>
+
+    <br><br> 
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" cols="20" rows="10"></textarea>
+
+    <br><br> 
+
+    <label for="gender">Gender:</label>
+    <select name="gender" id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="na">Do Not Specify</option>
+    </select>
+
+    <br><br>
+    
+    <!-- Redio Buttons and Checkboxes -->
+    <input type="radio" id="option1" name="options" value="option1" />
+    <label for="option1">Option 1</label>
+    <input type="radio" id="option2" name="options" value="option2" />
+    <label for="option2">Option 2</label>
+    <input type="radio" id="option3" name="options" value="option3" />
+    <label for="option3">Option 3</label>
+
+    <br><br> 
+
+    <input type="checkbox" id="check1" name="checks" value="check1" />
+    <label for="check1">Check 1</label>
+    <input type="checkbox" id="check2" name="checks" value="check2" />
+    <label for="check2">Check 2</label>
+    <input type="checkbox" id="check3" name="checks" value="check3" />
+    <label for="check3">Check 3</label>
+
+    <br><br> 
+    
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
