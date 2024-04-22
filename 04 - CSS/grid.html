@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .container {
+      border: 2px solid red;
+      display: grid;
+      /* grid-template-rows: 100px 300px 100px;
+      grid-template-columns: 100px 300px 200px; */
+      grid-template: repeat(5, 2fr) / repeat(4, 2fr);
+      /* column-gap: 20px;
+      row-gap: 20px; */
+      gap: 20px 20px;
+    }
+
+    .gridItem1 {
+      /* grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 4; */
+      grid-row: 1/3;
+      grid-column: 1/4;
+    }
+
+    .gridItem {
+      background-color: aquamarine;
+      padding: 10px;
+      margin: 2px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container gridContainer">
+    <div class="gridItem gridItem1">1</div>
+    <div class="gridItem gridItem2">2</div>
+    <div class="gridItem gridItem3">3</div>
+    <div class="gridItem gridItem4">4</div>
+    <div class="gridItem gridItem5">5</div>
+    <div class="gridItem gridItem6">6</div>
+    <div class="gridItem gridItem7">7</div>
+    <div class="gridItem gridItem8">8</div>
+    <div class="gridItem gridItem9">9</div>
+  </div>
+</body>
+</html>
+
+
+<!-- codefile.io -->
+<!-- https://codeshare.io/jA4MEB -->
+<!-- https://codeshare.io/0bqWwL -->
+<!-- codepen.io -->

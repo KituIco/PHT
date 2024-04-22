@@ -1,0 +1,61 @@
+h3 {
+  text-align: center;
+  font-size: 3em;
+}
+
+table {
+  margin: auto;
+  font-size: 1.2em;
+  width: 800px;
+}
+
+/* Row Styling */
+tr {
+  background-color: rgb(240, 232, 232);
+}
+
+tr:hover {
+  border: 6px solid whitesmoke;
+}
+
+
+/* Table Head Styling */
+th {
+  padding: 10px 20px;
+  font-family: 'Franklin Gothic Medium';
+  background-color: antiquewhite;
+}
+
+
+/* Table Content Styling */
+td {
+  font-family:  'Gill Sans MT';
+  padding: 4px 0px;
+  text-align: center;
+}
+
+tfoot tr td {
+  text-align: right;
+  padding: 6px 10px;
+  background-color: antiquewhite;
+}
+
+
+/* Class Selectors */
+.username{
+  font-weight: 600;
+  text-align: left;
+}
+
+/* ID Selectors */
+#first-place {
+  background-color: gold;
+}
+
+#second-place {
+  background-color: silver;
+}
+
+#third-place {
+  background-color: rgb(110, 77, 37);
+}

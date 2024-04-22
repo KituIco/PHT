@@ -1,0 +1,59 @@
+body {
+  background-color: antiquewhite;
+  background: rgb(202, 156, 156);
+  background: linear-gradient(54deg, rgba(223, 57, 57, 0.2) 35%, rgba(89, 89, 197, 0.3) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.font-sample {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: teal;
+  color: mintcream;
+}
+
+.text-sample {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+#spacing-sample {
+  letter-spacing: 2px;
+  line-height: 5;
+  background-color: palegreen;
+  text-indent: 50px;
+}
+
+#shadow-sample {
+  text-shadow: 10px 5px 10px rgb(14, 5, 116);
+  /* x-coordinate, y-coordinate, blur radius, color */
+}
+
+#box-model {
+  background-color: lavenderblush;
+  height: 100px;
+  width: 80px;
+
+  padding: 10px 20px 5px 25px;
+  padding-top: 30px;
+
+  border-color: crimson;
+  border-width: 5px;
+  border-style: dotted;
+
+  border: 4px dashed green;
+  border-radius: 20px;
+  border-top: 5px solid purple;
+  border-right: 5px dashed blue;
+  border-bottom: 8px inset green;
+  border-left: 8px double orange;
+
+  margin: 10px 20px 30px 40px
+}
