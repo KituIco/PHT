@@ -3,6 +3,8 @@ function greet() {
   console.log("Hello, welcome to the world of functions.");
 }
 
+
+// Arrow function - modern JS
 const meet = () => {
   console.log("Hello, welcome to the world of functions!");
 }
@@ -17,7 +19,7 @@ function squareDeclation(num) {
   return num * num;
 }
 // 2. Function Expression
-const squareExpression = (num) => {
+const squareExpression = function (num) {
   return num * num;
 }
 
