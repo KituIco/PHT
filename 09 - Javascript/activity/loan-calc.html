@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- In this activity, you will create a simple loan calculator application using HTML, CSS, and JavaScript. The loan calculator will take input from the user, including the loan amount, interest rate, and loan term, and calculate the monthly loan payment based on these values. -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loanCalc">
+    <h1>Loan Calculator</h1>
+    
+    <form id="loanForm">
+      <div class="container">
+        <label for="loanAmount">Loan Amount</label>
+        <input type="number" id="loanAmount" required />
+      </div>
+      <div class="container">
+        <label for="interestRate">Interest Rate (%)</label>
+        <input type="number" id="interestRate" required />
+      </div>
+      <div class="container">
+        <label for="loanTerm">Loan Term (years)</label>
+        <input type="number" id="loanTerm" required />
+      </div>
+      <button type="submit">Calculate</button>
+    </form>
+    
+    <div id="result">Waiting for your Input!</div>
+  </div>
+  <script src="loan-calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!-- 
+
+  Show something like hello world. A plain text.
+
+  Elements: texts in dark golden font color enclosed in angle brackets
+    - Differentiated by tags: body, div, span
+      1) <body> tag represents the main content area of an HTML document. It contains all the visible content that users see when they visit a webpage.
+      2) <div> tag is a generic block-level element used for grouping and styling larger chunks of content. It does not have any inherent semantic meaning; it’s purely for layout and organization.
+      3) <span> tag is an inline element used for styling smaller portions of content. It does not create any line breaks and only affects the content within it.
+
+    - In summary:
+      Use <body> for the entire visible content of your webpage.
+      Use <div> for grouping and styling larger sections.
+      Use <span> for inline styling of smaller segments.
+      
+    - For this session, all of our tags have open and close
+
+  Attribute: texts in pale yellow font color
+    - attributes provide additional information about elements.
+  Value: texts in pale green font color enclosed by quotations
+    - value of an attribute provides the actual data associated with the attribute name.
+
+    1) The id attribute is used to uniquely identify a specific element on a webpage. It should be unique within the entire HTML document.
+    2) The class attribute is used to group multiple elements together based on a common characteristic. You can apply the same class to multiple elements, allowing them to share the same styling properties.
+  * Even though dice and column are both div elements, we can differentiate them. * 
+
+
+-->
+
+<body> 
+  <div class="dice" id="first-face">
+   <span class="dot"></span>
+  </div>
+  
+  <div class="dice" id="second-face">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  
+  <div class="dice" id="third-face">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  
+  <div class="dice" id="fourth-face">
+    <div class="column">
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="column">
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  
+  <div class="dice" id="fifth-face">
+    <div class="column">
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="column">
+      <span class="dot"></span>
+    </div>
+    <div class="column">
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  
+  <div class="dice" id="sixth-face">
+    <div class="column">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="column">
+      <span class="dot"></span>
+      <span class="dot"></span>
+       <span class="dot"></span>
+    </div>
+  </div>
+</body>
+
+<div class="dice" id="first-face">
+  <span class="dot"></span>
+</div>
+⋮
+<div class="dice" id="fourth-face">
+  <div class="column">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <div class="column">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+⋮

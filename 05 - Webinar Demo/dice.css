@@ -1,0 +1,81 @@
+/*
+
+  Actually without CSS we will see nothing in our live screen. It is because as mention earlier, CSS defines the size, shape, color, orientation, etc. everything about styling. It creates the form of an element. 
+
+  Differentiate with plain text.
+
+  Selector: texts outside the curly braces.
+    - selector points or select to the HTML element that we want to target.
+
+  Declaration Block: texts inside the curly braces.
+    - contains one or more declarations separated by semicolons.
+    - a declaration is consist of property and value.
+
+    Display in Flex Box. Flex Box provides an efficient way to distribute space, align items, and control their order within a container.
+
+
+    div, p	Selects all <div> elements and all <p> elements
+    div p	Selects all <p> elements inside <div> elements
+*/
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.dice {
+  padding: 4px;
+  background-color: #2C3433;
+  width: 104px;
+  height: 104px;
+  border-radius: 10%;
+  margin-right : 10px;
+}
+#first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot{
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color:#DAEDEB;
+}
+#second-face { 
+  display: flex;
+  justify-content: space-between;
+}
+#second-face .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+#third-face {
+  display: flex;
+  justify-content: space-between;
+}
+#third-face .dot:nth-of-type(1) {
+  align-self: flex-end;
+}
+#third-face .dot:nth-of-type(2) {
+  align-self: center;
+}
+
+#fourth-face, #sixth-face, #fifth-face{
+  display: flex;
+  justify-content: space-between;
+}
+#fourth-face .column , #sixth-face .column, #fifth-face .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}

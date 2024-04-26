@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 30px;
+  font-size: 25px; /* Increased for better readability */
+}
+
+
+p{
+  text-align: justify;
+}
+
+.prepared-by{
+  text-align: center;
+  font-weight: 400px;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.designation{
+  text-align: center;
+  font-weight: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.concept, .terminology, .declaration {
+  margin-bottom: 20px;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: block;
+}
+
+/* Image Styling */
+img {
+  max-width: 70%; /* Limit image width for better fit */
+  height: auto;  /* Maintain aspect ratio */
+  display: block; /* Make it a block element */
+  margin: 20px auto; /* Center the image */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  border-radius: 20%;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays Lecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <p class="prepared-by">Prepared By: <strong>Engr. Ralph Laurence Visaya</strong></p>
+    <p class="designation">Full-stack Web Developer / Hardware Developer</p>
+
+    <section class="concept">
+        <h2>What is an Array?</h2>
+        <p>Array is a data structure that allows you to store and organize multiple values within a single
+            variable. They provide a convenient way to organize and manipulate collections of data.</p>
+
+        <img src="https://www.educative.io/api/page/5315705890144256/image/download/6142425421578240"
+            alt="Array Diagram">
+
+        <p>You can create JavaScript Arrays using the Array constructor or using the shorthand array literal syntax,
+            which employs square brackets. Arrays can dynamically grow or shrink in size as elements are added or
+            removed.</p>
+    </section>
+
+    <section class="terminology">
+        <h2>Basic Terminologies of JavaScript Array</h2>
+        <ul>
+            <li><strong>Array:</strong> A data structure in JavaScript that allows you to store multiple values in a
+                single variable.</li>
+            <li><strong>Array Element:</strong> Each value within an array is called an element. Elements are accessed
+                by their index.</li>
+            <li><strong>Array Index:</strong> A numeric representation that indicates the position of an element in the
+                array. JavaScript arrays are zero-indexed, meaning the first element is at index 0.</li>
+            <li><strong>Array Length:</strong> The number of elements in an array. It can be retrieved using the length
+                property.</li>
+        </ul>
+    </section>
+
+    <section class="declaration">
+        <h2>Declaration of an Array</h2>
+        <p>There are basically two ways to declare an array Array Literal and Array Constructor.</p>
+    </section>
+
+    <section class="declaration">
+        <h3>1. Creating an Array using Array Literal</h3>
+        <p>Creating an array using array literal involves using square brackets [ ] to define and initialize the array.
+            This method is concise and widely preferred for its simplicity.</p>
+
+        <pre><code>
+                let myNumbers = [10, 20, 30, 40]; 
+                let mixedArray = ["Alice", 25, true];
+            </code></pre>
+        <section class="declaration">
+
+            <h3>2. Creating an Array using Array Constructor (JavaScript new Keyword)</h3>
+            <p>The "Array Constructor" refers to a method of creating arrays by invoking the Array constructor function.
+                This approach allows for dynamic initialization and can be used to create arrays with a specified length
+                or elements.</p>
+
+            <p><strong>Syntax:</strong></p>
+            <pre><code>
+                    let arrayName = new Array();
+                </code></pre>
+
+        </section>
+
+        <section class="operations">
+            <h2>Basic Operations on JavaScript Arrays</h2>
+
+            <h3>1. Accessing Elements of an Array</h3>
+            <p>Any element in the array can be accessed using the index number. The index in the arrays starts with 0.
+            </p>
+
+            <pre><code>
+                    let fruits = ["Apple", "Orange", "Banana"];
+
+                    // Accessing the first element:
+                    let firstFruit = fruits[0]; // firstFruit will be "Apple"
+
+                    // Accessing the third element:
+                    let thirdFruit = fruits[2]; // thirdFruit will be "Banana" 
+                </code></pre>
+            <h4>2. Accessing the First Element of an Array</h4>
+            <pre><code> 
+                    let fruits = ["Apple", "Orange", "Banana"]; 
+                    let firstFruit = fruits[0]; // "Apple" 
+                </code></pre>
+
+            <h4>3. Accessing the Last Element of an Array</h4>
+            <pre><code>
+                    let fruits = ["Apple", "Orange", "Banana"]; 
+                    let lastIndex = fruits.length - 1;   
+                    let lastFruit = fruits[lastIndex]; // "Banana" 
+                </code></pre>
+
+            <h3>Modifying, Adding, and Removing Elements</h3>
+
+            <h4>4. Modifying Array Elements</h4>
+            <pre><code>
+                    let numbers = [1, 2, 3];  
+                    numbers[1] = 5; // numbers will now be [1, 5, 3]   
+                </code></pre>
+
+            <h4>5. Adding Elements to the Array</h4>
+            <pre><code>
+                    let colors = ["red", "green"];
+                    colors.push("blue"); // Adds to the end: ["red", "green", "blue"]
+                    colors.unshift("yellow"); // Adds to the start: ["yellow", "red", "green", "blue"]
+                </code></pre>
+
+            <h4>6. Removing Elements from an Array</h4>
+            <pre><code>
+
+                let lastElement = NewCourses.pop();
+                console.log("After Removed the last elements: " + NewCourses);
+
+                // Removes and returns the first element
+                let firstElement = NewCourses.shift();
+                console.log("After Removed the First elements: " + NewCourses);
+                </code></pre>
+
+        <h4>6. Iterating Through Array Elements</h4>
+        <p>Use <code>for</code> and <code>forEach</code> loops to access and process array elements.</p>   
+        <pre><code>
+            // For loop example:
+            let colors = ["red", "green", "blue"];
+            for (let i = 0; i < colors; i++) {
+                console.log(colors[i]);
+            }
+
+            // forEach example:
+            colors.forEach(function(color) {
+                console.log(color);
+            });
+        </code></pre>
+
+        <h4>7. Array Concatenation</h4> 
+        <p>Combine arrays using the <code>concat()</code> method, which returns a new array.</p>  
+        <pre><code>
+            let arr1 = [1, 2, 3];
+            let arr2 = [4, 5];
+            let combinedArray = arr1.concat(arr2);
+            console.log(combinedArray); // Output: [1, 2, 3, 4, 5]
+        </code></pre> 
+
+        <h4>8. Conversion of an Array to String</h4> 
+        <p>Use the <code>toString()</code> method to convert an array into a comma-separated string.</p> 
+        <pre><code>
+            let fruits = ["Apple", "Banana", "Mango"];
+            let fruitsString = fruits.toString();
+            console.log(fruitsString); // Output: Apple,Banana,Mango
+        </code></pre>    
+
+        <h4>9. Check the Type of an Array</h4> 
+        <p>The <code>typeof</code> operator returns "object" for arrays, but it's a more reliable way to check if a variable is an array:</p> 
+        <pre><code>
+            let numbers = [1, 2, 3];
+            console.log(typeof numbers); // Output: object
+
+            // More reliable check:
+            console.log(Array.isArray(numbers)); // Output: true
+        </code></pre>  
+        </section>
+
+
+    </section>
+    <section class="methods"> 
+        <h2>Array Methods</h2>
+        <p>JavaScript array methods are built-in functions used to manipulate and perform operations on arrays, simplifying tasks like adding, removing, or modifying elements within arrays.</p>
+
+        <h3>Example of Common Array Methods:</h3>
+        <pre><code>
+            let numbers = [1, 2, 3, 4, 5];
+
+            // length
+            console.log('Array length:', numbers.length);
+
+            // indexOf
+            console.log('Index of 3:', numbers.indexOf(3));
+
+            // includes
+            console.log('Includes 5:', numbers.includes(5));
+
+            // join
+            console.log('Joined array:', numbers.join('-'));
+
+            // slice
+            let slicedArray = numbers.slice(1, 4);
+            console.log('Sliced array:', slicedArray);
+
+            // splice
+            let removedElements = numbers.splice(2, 2);
+            console.log('Removed elements:', removedElements);
+            console.log('Updated array:', numbers);
+        </code></pre>
+    </section>
+
+    <script src="array.js"></script>
+</body>
+
+</html>
