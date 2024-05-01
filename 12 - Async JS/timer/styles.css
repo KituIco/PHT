@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #b6fc9f;
+  display: flex;
+  font-family:"Segoe UI", sans-serif;
+  padding-bottom: 100px;
+}
+
+section {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 40px;
+  margin: 10px 0px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 100;
+  font-size: 12px;
+  margin: 10px 0px 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+#prompts {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 40px;
+}
+
+#inputs {
+  margin: 0px 20px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font: 62px 'Arial', sans-serif;
+  text-align: center;
+  width: 60px;
+  height: 100px;
+  
+  background: rgb(17, 122, 17);
+	border-radius: 10px;
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	
+  border: none;
+	color: rgb(223, 236, 223);
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+}
+
+button {
+	height: 40px;	
+	margin: 4px;
+
+  border: none;
+  border-radius: 5px;
+  font: bold 14px 'Helvetica', sans-serif;
+  text-transform: uppercase;
+}
+
+#enter {
+  width: 200px;
+  background: #92ffff;
+	box-shadow: 0px 4px #53a8a8;
+	color: rgb(0, 0, 0);
+}
+#enter:hover {
+  height: 40px;	
+	box-shadow: 0px 2px #53a8a8;
+  margin: 6px auto 2px;
+}
+.warning {
+  background: #f1ff92 !important;
+	box-shadow: 0px 4px #9da853 !important;
+}
+.warning:hover {
+  height: 40px;	
+	box-shadow: 0px 2px #9da853 !important;
+  margin: 6px auto 2px;
+}
+
+#reset {
+  width: 200px;
+  background: #ff9292;
+	box-shadow: 0px 4px #a85353;
+	color: #363825;
+}
+#reset:hover {
+  height: 41px;	
+	box-shadow: 0px 2px #a85353;
+  margin: 6px auto 2px;
+}
+
+hr {
+  border: 0.5px solid green;
+  border-radius: 5px;
+}
+
+#countdown {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nums {
+  margin: 0px 10px;
+}
+
+.nums p {
+  padding-right: 3px;
+  font-size: 64px;
+  margin: 0;
+  width: 80px;
+  letter-spacing: -2px;
+}
