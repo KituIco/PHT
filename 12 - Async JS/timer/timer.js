@@ -17,7 +17,6 @@ function start(e) {
   
   // checksif value is valid
   let value = parseInt(tens.value + ones.value);
-  console.log(value);
   if ( !(value <= 60 && value >= 1) ) {
     alert("Please enter proper input.");
     return;
@@ -42,7 +41,6 @@ function resets(e = null) {
   // resets min and sec to 0
   updateNum(minutes,0);
   updateNum(seconds,0);
-  console.log("Reseted");
 }
 
 

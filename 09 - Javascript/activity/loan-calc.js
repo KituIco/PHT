@@ -19,7 +19,7 @@ function handleSubmit(event) {
 
   let value = loanAmountValue * interestRateValue/100 * loanTermValue / 12;
 
-  result.textContent = `Monthly Payment is USD ${value.toFixed(2)}`;
+  result.textContent = `Monthly Payment is $${value.toFixed(2)}`;
   result.setAttribute("class", "success");
 }
 
