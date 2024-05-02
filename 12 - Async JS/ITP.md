@@ -4,7 +4,7 @@ Preapring yung to become an Instructor
 
 A bootcamp instructor is a teacher or trainer who leads a bootcamp which is an intensive, accelerated educational program. Prepare you to be an effective instructor. The main focus is <b>pedagogy</b>. This will set the baseline for everyone in terms of what to teach.
 
-### When can you say that you were able to conduct a successfuly class?
+### When can you say that you were able to conduct a successfully class?
 
 The success can vary based on context, subject, and students themselves. As an instructor, these reflects on certain indicators and we adjust the teaching approach accordingly depending the result! Here are some signs that a class has been conducted effectively: (1) Engagement and Participation, (2) Assessment and Feedback, (3) Positive Classroom Climate, (4) Learning Outcomes Achieved.
 
@@ -16,7 +16,7 @@ The success can vary based on context, subject, and students themselves. As an i
 
 ### Do you have a passion for teaching?
 
-Breaking not so good habits. Not so good learning experiences from your teacher or instructor.\
+Breaking not so good habits. Not so good learning experiences from your teacher or instructor.
 
 <br/>
 
